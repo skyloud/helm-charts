@@ -1,5 +1,7 @@
 # Skyloud Helm Charts
 
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/skyloud-helm-charts)](https://artifacthub.io/packages/search?repo=skyloud-helm-charts)
+
 This repository contains Helm charts contributed by Skyloud. It's a collection of charts that currently not 
 covered by other public charts and are used by Skyloud and its customers.
 
