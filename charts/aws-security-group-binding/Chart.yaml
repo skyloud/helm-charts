@@ -1,0 +1,6 @@
+apiVersion: v2
+name: aws-security-group-binding
+description: Chart to link an AWS ALB Target Group to a Kubernetes Service
+type: application
+version: 0.1.0
+appVersion: "1.0.0"

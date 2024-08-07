@@ -1,0 +1,13 @@
+apiVersion: vpcresources.k8s.aws/v1beta1
+kind: SecurityGroupPolicy
+metadata:
+  name: {{ include "aws-security-group-binding.fullname" . }}
+  labels:
+    {{- include "aws-security-group-binding.labels" . | nindent 4 }}
+spec:
+  podSelector:
+    matchLabels:
+      {{- .Values.podSelector.matchLabels | toYaml | nindent 6 }}
+  securityGroups:
+    groupIds:
+      {{- .Values.securityGroups.groupIds | toYaml | nindent 6 }}

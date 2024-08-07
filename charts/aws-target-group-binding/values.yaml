@@ -1,0 +1,14 @@
+# Default values for aws-target-group-binding.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  name: ""
+  port: 80
+
+aws:
+  targetGroupARN: ""
+  targetType: "ip"
