@@ -1,0 +1,17 @@
+# Default values for aws-security-group-binding.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+nameOverride: ""
+fullnameOverride: ""
+
+storageClasses:
+  gp3:
+    name: "gp3"
+    default: true
+    volumeBindingMode: WaitForFirstConsumer
+  io1:
+    name: "io1"
+    default: false
+    volumeBindingMode: WaitForFirstConsumer
+    iopsPerGB: 10

@@ -1,0 +1,13 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: {{ .Values.storageClasses.io1.name }}
+  labels:
+    {{- include "aws-ebs-storage-classes.labels" . | nindent 4 }}
+spec:
+  provisioner: ebs.csi.aws.com
+  parameters:
+    type: io1
+    iopsPerGB: {{ .Values.storageClasses.io1.iopsPerGB }}
+    fsType: ext4
+    volumeBindingMode: {{ .Values.storageClasses.io1.volumeBindingMode }}
