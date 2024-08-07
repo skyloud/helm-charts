@@ -2,5 +2,5 @@ apiVersion: v2
 name: aws-target-group-binding
 description: Chart to link an AWS ALB Target Group to a Kubernetes Service
 type: application
-version: 0.1.0
+version: 1.0.0
 appVersion: "1.0.0"
