@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  aws-security-group-binding:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-08-07T07:33:22.22510254Z"
+    description: Chart to link an AWS ALB Target Group to a Kubernetes Service
+    digest: 0499fbe8e75bf63aaf953c667406251857af6af06de4c818cd0801af6d1ff18a
+    name: aws-security-group-binding
+    type: application
+    urls:
+    - https://github.com/skyloud/helm-charts/releases/download/aws-security-group-binding-1.0.0/aws-security-group-binding-1.0.0.tgz
+    version: 1.0.0
+  aws-target-group-binding:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-08-07T07:33:22.350603517Z"
+    description: Chart to link an AWS ALB Target Group to a Kubernetes Service
+    digest: 3f121bb4c547f28fb43adb1a0a829ee8869ffaaed0f9864f019ce3152fc7617c
+    name: aws-target-group-binding
+    type: application
+    urls:
+    - https://github.com/skyloud/helm-charts/releases/download/aws-target-group-binding-1.0.0/aws-target-group-binding-1.0.0.tgz
+    version: 1.0.0
+generated: "2024-08-07T07:33:22.350609217Z"
