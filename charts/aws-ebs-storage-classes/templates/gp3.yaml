@@ -4,9 +4,11 @@ metadata:
   name: {{ .Values.storageClasses.gp3.name }}
   labels:
     {{- include "aws-ebs-storage-classes.labels" . | nindent 4 }}
+  annotations:
+    storageclass.kubernetes.io/is-default-class: {{ .Values.storageClasses.gp3.default | quote }}
 spec:
 provisioner: ebs.csi.aws.com
 parameters:
-  type: gp3
-  fsType: ext4
+  type: "gp3"
+  fsType: "ext4"
 volumeBindingMode: {{ .Values.storageClasses.gp3.volumeBindingMode }}

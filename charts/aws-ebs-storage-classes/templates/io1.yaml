@@ -4,9 +4,11 @@ metadata:
   name: {{ .Values.storageClasses.io1.name }}
   labels:
     {{- include "aws-ebs-storage-classes.labels" . | nindent 4 }}
+  annotations:
+    storageclass.kubernetes.io/is-default-class: {{ .Values.storageClasses.io1.default | quote }}
 provisioner: ebs.csi.aws.com
 parameters:
-  type: io1
-  iopsPerGB: {{ .Values.storageClasses.io1.iopsPerGB }}
-  fsType: ext4
+  type: "io1"
+  iopsPerGB: "{{ .Values.storageClasses.io1.iopsPerGB }}"
+  fsType: "ext4"
 volumeBindingMode: {{ .Values.storageClasses.io1.volumeBindingMode }}
