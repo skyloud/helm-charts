@@ -5,8 +5,8 @@ metadata:
   labels:
     {{- include "aws-ebs-storage-classes.labels" . | nindent 4 }}
 spec:
-  provisioner: ebs.csi.aws.com
-  parameters:
-    type: gp3
-    fsType: ext4
-    volumeBindingMode: {{ .Values.storageClasses.gp3.volumeBindingMode }}
+provisioner: ebs.csi.aws.com
+parameters:
+  type: gp3
+  fsType: ext4
+volumeBindingMode: {{ .Values.storageClasses.gp3.volumeBindingMode }}
