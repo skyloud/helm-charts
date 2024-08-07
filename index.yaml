@@ -3,6 +3,16 @@ entries:
   aws-ebs-storage-classes:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2024-08-07T11:37:43.455267928Z"
+    description: Chart to create storage classes for EBS volumes
+    digest: 04bf80bcc6fb3fe532c33fdb6dc9f210d981eccc9057a67f8db93a95d51593f9
+    name: aws-ebs-storage-classes
+    type: application
+    urls:
+    - https://github.com/skyloud/helm-charts/releases/download/aws-ebs-storage-classes-1.0.1/aws-ebs-storage-classes-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2024-08-07T10:28:28.670688306Z"
     description: Chart to create storage classes for EBS volumes
     digest: 6fe2ed6f5e4e84ec61905977fa940a56b28746f5e7641b0d2e8b0869e97b190c
@@ -33,4 +43,4 @@ entries:
     urls:
     - https://github.com/skyloud/helm-charts/releases/download/aws-target-group-binding-1.0.0/aws-target-group-binding-1.0.0.tgz
     version: 1.0.0
-generated: "2024-08-07T10:28:28.670694628Z"
+generated: "2024-08-07T11:37:43.455280381Z"
