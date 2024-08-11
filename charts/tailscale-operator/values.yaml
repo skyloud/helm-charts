@@ -50,7 +50,7 @@ operatorConfig:
 
   secretStore:
     enabled: false
-    secretStore: operator-oauth
+    name: operator-oauth
     paths:
       clientId: clientId
       clientSecret: clientSecret
