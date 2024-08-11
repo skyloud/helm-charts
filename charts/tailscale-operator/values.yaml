@@ -22,6 +22,11 @@ operatorConfig:
   defaultTags:
     - "tag:k8s-operator"
 
+  serviceAccount:
+    name: operator
+    annotations: {}
+    labels: {}
+
   image:
     # Repository defaults to DockerHub, but images are also synced to ghcr.io/tailscale/k8s-operator.
     repository: tailscale/k8s-operator

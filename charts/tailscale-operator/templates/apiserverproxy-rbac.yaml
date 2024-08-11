@@ -17,7 +17,7 @@ metadata:
   name: tailscale-auth-proxy
 subjects:
 - kind: ServiceAccount
-  name: operator
+  name: {{ .Values.operatorConfig.serviceAccount.name }}
   namespace: {{ .Release.Namespace }}
 roleRef:
   kind: ClusterRole

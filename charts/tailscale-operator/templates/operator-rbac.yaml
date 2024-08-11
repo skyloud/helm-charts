@@ -4,8 +4,12 @@
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: operator
+  name: {{ .Values.operatorConfig.serviceAccount.name }}
   namespace: {{ .Release.Namespace }}
+  annotations:
+    {{- toYaml .Values.operatorConfig.serviceAccount.annotations | nindent 4 }}
+  labels:
+    {{- toYaml .Values.operatorConfig.serviceAccount.labels | nindent 4 }}
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
@@ -34,7 +38,7 @@ metadata:
   name: tailscale-operator
 subjects:
 - kind: ServiceAccount
-  name: operator
+  name: {{ .Values.operatorConfig.serviceAccount.name }}
   namespace: {{ .Release.Namespace }}
 roleRef:
   kind: ClusterRole
@@ -64,7 +68,7 @@ metadata:
   namespace: {{ .Release.Namespace }}
 subjects:
 - kind: ServiceAccount
-  name: operator
+  name:  {{ .Values.operatorConfig.serviceAccount.name }}
   namespace: {{ .Release.Namespace }}
 roleRef:
   kind: Role

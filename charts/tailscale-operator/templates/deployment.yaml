@@ -29,7 +29,7 @@ spec:
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: operator
+      serviceAccountName: {{ .Values.operatorConfig.serviceAccount.name }}
       {{- with .Values.operatorConfig.podSecurityContext }}
       securityContext:
         {{- toYaml . | nindent 8 }}
