@@ -53,4 +53,27 @@ entries:
     urls:
     - https://github.com/skyloud/helm-charts/releases/download/aws-target-group-binding-1.0.0/aws-target-group-binding-1.0.0.tgz
     version: 1.0.0
-generated: "2024-08-07T11:44:55.456692366Z"
+  tailscale-operator:
+  - apiVersion: v2
+    appVersion: v1.70.0
+    created: "2024-08-11T13:57:28.834911618Z"
+    description: A Helm chart for Tailscale Kubernetes operator
+    digest: ccc575006df6a05942312e7615acdcf7b7473199579b2e82968872d80459e00d
+    home: https://github.com/tailscale/tailscale
+    keywords:
+    - tailscale
+    - vpn
+    - ingress
+    - egress
+    - wireguard
+    maintainers:
+    - name: tailscale-maintainers
+      url: https://tailscale.com/
+    name: tailscale-operator
+    sources:
+    - https://github.com/tailscale/tailscale
+    type: application
+    urls:
+    - https://github.com/skyloud/helm-charts/releases/download/tailscale-operator-1.70.1/tailscale-operator-1.70.1.tgz
+    version: 1.70.1
+generated: "2024-08-11T13:57:28.834949639Z"
