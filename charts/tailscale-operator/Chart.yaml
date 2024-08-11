@@ -15,4 +15,4 @@ name: tailscale-operator
 sources:
 - https://github.com/tailscale/tailscale
 type: application
-version: 1.70.0
+version: 1.70.1

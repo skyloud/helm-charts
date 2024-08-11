@@ -3,7 +3,7 @@
 
 # Operator oauth credentials. If set a Kubernetes Secret with the provided
 # values will be created in the operator namespace. If unset a Secret named
-# operator-oauth must be precreated.
+# operator-oauth must be precreated or use the secretStore configuration.
 oauth: {}
   # clientId: ""
   # clientSecret: ""
@@ -47,6 +47,13 @@ operatorConfig:
   podSecurityContext: {}
 
   securityContext: {}
+
+  secretStore:
+    enabled: false
+    secretStore: operator-oauth
+    paths:
+      clientId: clientId
+      clientSecret: clientSecret
 
 # proxyConfig contains configuraton that will be applied to any ingress/egress
 # proxies created by the operator.
