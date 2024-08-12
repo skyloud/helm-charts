@@ -53,6 +53,17 @@ entries:
     urls:
     - https://github.com/skyloud/helm-charts/releases/download/aws-target-group-binding-1.0.0/aws-target-group-binding-1.0.0.tgz
     version: 1.0.0
+  common:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2024-08-12T10:45:02.742349743Z"
+    description: Opinated Helm chart for deploying applications to Kubernetes
+    digest: a3fe2dfe12ffa57fd85e5954b3a6826bfa7fbda9a2bc0ec9199783503053762b
+    name: common
+    type: application
+    urls:
+    - https://github.com/skyloud/helm-charts/releases/download/common-1.0.17/common-1.0.17.tgz
+    version: 1.0.17
   tailscale-operator:
   - apiVersion: v2
     appVersion: v1.70.0
@@ -120,4 +131,4 @@ entries:
     urls:
     - https://github.com/skyloud/helm-charts/releases/download/tailscale-operator-1.70.1/tailscale-operator-1.70.1.tgz
     version: 1.70.1
-generated: "2024-08-11T20:32:01.121894746Z"
+generated: "2024-08-12T10:45:02.742398073Z"
