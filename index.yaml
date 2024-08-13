@@ -56,6 +56,16 @@ entries:
   common:
   - apiVersion: v2
     appVersion: v0.1.0
+    created: "2024-08-13T14:18:02.598512315Z"
+    description: Opinated Helm chart for deploying applications to Kubernetes
+    digest: c49902dfeae3efebe1ac578ffb44840f8c7cbae7802cb9e7a62122126beb331c
+    name: common
+    type: application
+    urls:
+    - https://github.com/skyloud/helm-charts/releases/download/common-1.0.18/common-1.0.18.tgz
+    version: 1.0.18
+  - apiVersion: v2
+    appVersion: v0.1.0
     created: "2024-08-12T10:45:02.742349743Z"
     description: Opinated Helm chart for deploying applications to Kubernetes
     digest: a3fe2dfe12ffa57fd85e5954b3a6826bfa7fbda9a2bc0ec9199783503053762b
@@ -131,4 +141,4 @@ entries:
     urls:
     - https://github.com/skyloud/helm-charts/releases/download/tailscale-operator-1.70.1/tailscale-operator-1.70.1.tgz
     version: 1.70.1
-generated: "2024-08-12T10:45:02.742398073Z"
+generated: "2024-08-13T14:18:02.598526852Z"
