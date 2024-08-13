@@ -26,6 +26,10 @@ annotations: {}
 
 podAnnotations: {}
 
+labels: {}
+
+podLabels: {}
+
 revisionHistoryLimit: 2
 
 podSecurityContext: {}
@@ -168,7 +172,9 @@ volumes: []
 volumeMounts: []
 
 serviceAccount:
+  create: true
   annotations: {}
+  name: ""
 
 cronJobs: []
   # - name: my-cronjob

@@ -69,3 +69,10 @@ Return the proper Common image
 {{- end -}}
 {{- printf "%s%s%s" $repositoryName $separator $tag -}}
 {{- end -}}
+
+{{/*
+Service Account Name
+*/}}
+{{- define "common.serviceAccountName" -}}
+{{- default (include "common.fullname" .) .Values.serviceAccount.name -}}
+{{- end -}}

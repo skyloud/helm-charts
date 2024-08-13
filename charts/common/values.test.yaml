@@ -25,6 +25,9 @@ lifecycleHooks: {}
 
 podAnnotations: {}
 
+podLabels: 
+  app: "my-app"
+
 revisionHistoryLimit: 2
 
 podSecurityContext:
