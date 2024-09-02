@@ -74,6 +74,35 @@ entries:
     urls:
     - https://github.com/skyloud/helm-charts/releases/download/common-1.0.17/common-1.0.17.tgz
     version: 1.0.17
+  mimir:
+  - apiVersion: v2
+    appVersion: r305
+    created: "2024-09-02T12:42:28.441332811Z"
+    dependencies:
+    - alias: minio
+      condition: minio.enabled
+      name: minio
+      repository: https://charts.min.io/
+      version: 5.0.14
+    - alias: grafana-agent-operator
+      condition: metaMonitoring.grafanaAgent.installOperator
+      name: grafana-agent-operator
+      repository: https://grafana.github.io/helm-charts
+      version: 0.3.21
+    - alias: rollout_operator
+      condition: rollout_operator.enabled
+      name: rollout-operator
+      repository: https://grafana.github.io/helm-charts
+      version: 0.15.0
+    description: Grafana Mimir
+    digest: 987e23bd831ba7f80e2aad4c249e2f94d5d3bc15d6264ac8e56ddb7198451092
+    home: https://grafana.com/docs/helm-charts/mimir-distributed/latest/
+    icon: https://grafana.com/static/img/logos/logo-mimir.svg
+    kubeVersion: ^1.20.0-0
+    name: mimir
+    urls:
+    - https://github.com/skyloud/helm-charts/releases/download/mimir-5.5.0/mimir-5.5.0.tgz
+    version: 5.5.0
   tailscale-operator:
   - apiVersion: v2
     appVersion: v1.70.0
@@ -141,4 +170,4 @@ entries:
     urls:
     - https://github.com/skyloud/helm-charts/releases/download/tailscale-operator-1.70.1/tailscale-operator-1.70.1.tgz
     version: 1.70.1
-generated: "2024-08-13T14:18:02.598526852Z"
+generated: "2024-09-02T12:42:28.441363508Z"
