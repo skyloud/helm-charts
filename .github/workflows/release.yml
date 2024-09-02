@@ -27,7 +27,11 @@ jobs:
         uses: azure/setup-helm@v4
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-
+      - name: Add repository
+        run: |
+          helm repo add minio https://charts.min.io/
+          helm repo add grafana https://grafana.github.io/helm-charts
+      
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.6.0
         env:
