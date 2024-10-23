@@ -39,12 +39,12 @@ monolithic:
     size: "8Gi"
     storageClass: gp3-3000-125
   priorityClassName: "optional-rescheduling-priority-multi-az"
-    # The zone aware replication doesn't yet make a lot of difference, since it is not used at query side yet. This is
-    # however planned in an upcoming release, and therefore it's best to have this configuration already enabled.
+  # The zone aware replication doesn't yet make a lot of difference, since it is not used at query side yet. This is
+  # however planned in an upcoming release, and therefore it's best to have this configuration already enabled.
   zoneAwareReplication:
     enabled: true
-    topologyKey: "topology.kubernetes.io/zone"  # This generates default anti-affinity rules
-    zones:  # Zone list has to be fully redefined for modification. Update with you actual zones or skip to use logical zones only.
+    topologyKey: "topology.kubernetes.io/zone" # This generates default anti-affinity rules
+    zones: # Zone list has to be fully redefined for modification. Update with you actual zones or skip to use logical zones only.
     - name: zone-a
       nodeSelector:
         topology.kubernetes.io/zone: eu-west-1a
@@ -63,10 +63,10 @@ nginx:
   ingress:
     enabled: true
     hosts:
-      - host: "mimir.multi-az.test.ngdata.com"
-        paths:
-          - path: /
-            pathType: Prefix
+    - host: "mimir.multi-az.test.ngdata.com"
+      paths:
+      - path: /
+        pathType: Prefix
     tls:
     # empty, disabled.
 
@@ -75,7 +75,6 @@ minio:
   enabled: false
   replicas: 0
 
-# The Alert manager is currently not used. When enabling, it has to be configured for zone aware replication similar to
-# monolithic setup.
+# The Alert manager is included in the monolithic deployment
 alertmanager:
   enabled: false
