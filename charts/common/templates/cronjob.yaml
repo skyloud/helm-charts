@@ -10,6 +10,7 @@ spec:
   concurrencyPolicy: {{ .concurrencyPolicy | default "Allow" }}
   failedJobsHistoryLimit: {{ .failedJobsHistoryLimit | default 1 }}
   schedule: {{ .schedule | quote }}
+  suspend: {{ .suspend | default false }}
   jobTemplate:
     metadata:
       name: {{ .name }}
