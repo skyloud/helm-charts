@@ -84,6 +84,48 @@ entries:
     urls:
     - https://github.com/skyloud/helm-charts/releases/download/common-1.0.17/common-1.0.17.tgz
     version: 1.0.17
+  ingress:
+  - apiVersion: v2
+    appVersion: v1.0.0
+    created: "2025-06-03T16:10:47.404292635Z"
+    description: Helm Chart representing a single Ingress Kubernetes API object
+    digest: 99c9d55e2703303024d62422d3faeb8e73376a43cfc708ee051de9c56568b58d
+    home: https://skyloud.github.io/helm-charts
+    icon: https://ameijer.github.io/k8s-as-helm/icon.png
+    keywords:
+    - ingress
+    - api
+    - primitives
+    maintainers:
+    - name: skyloud
+      url: https://github.com/skyloud
+    - name: a26p
+      url: https://github.com/al26p
+    name: ingress
+    urls:
+    - https://github.com/skyloud/helm-charts/releases/download/ingress-1.0.0/ingress-1.0.0.tgz
+    version: 1.0.0
+  ingressclass:
+  - apiVersion: v2
+    appVersion: v1.0.0
+    created: "2025-06-03T16:10:47.519148475Z"
+    description: Helm Chart representing a single IngressClass Kubernetes API object
+    digest: 50000482cb43d64f84feee5249550f248a5656f1fb4c5342c8bb18b35a5322cd
+    home: https://skyloud.github.io/helm-charts
+    icon: https://ameijer.github.io/k8s-as-helm/icon.png
+    keywords:
+    - ingressClass
+    - api
+    - primitives
+    maintainers:
+    - name: skyloud
+      url: https://github.com/skyloud
+    - name: a26p
+      url: https://github.com/al26p
+    name: ingressclass
+    urls:
+    - https://github.com/skyloud/helm-charts/releases/download/ingressclass-1.0.0/ingressclass-1.0.0.tgz
+    version: 1.0.0
   mimir:
   - apiVersion: v2
     appVersion: r305
@@ -208,4 +250,4 @@ entries:
     urls:
     - https://github.com/skyloud/helm-charts/releases/download/tailscale-operator-1.70.1/tailscale-operator-1.70.1.tgz
     version: 1.70.1
-generated: "2024-11-26T12:50:07.283875878Z"
+generated: "2025-06-03T16:10:47.519171337Z"
