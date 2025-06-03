@@ -1,0 +1,23 @@
+apiVersion: {{ template "apiVersion" . }}
+kind: IngressClass
+metadata:
+{{- if .Values.annotations }}
+  annotations:
+{{ toYaml .Values.annotations | indent 4}}
+{{- end }}
+  labels:
+    app: {{ template "ingressClass.name" . }}
+    chart: {{ .Chart.Name }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+{{- if .Values.labels }}
+{{ toYaml .Values.labels | indent 4 }}
+{{- end }}
+  name: {{ template "ingressClass.name" . }}
+spec:
+  controller: {{ .Values.controller }}
+  
+{{- if .Values.parameters }}
+  parameters:
+{{ toYaml .Values.parameters | indent 4 }}
+{{- end -}}

@@ -1,0 +1,9 @@
+labels:
+  "test": "true"
+
+controller: "k8s.io/ingress-nginx"
+
+parameters:
+  apiGroup: eks.amazonaws.com
+  kind: IngressClassParams
+  name: alb

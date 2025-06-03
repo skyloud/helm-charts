@@ -1,0 +1,18 @@
+ingressClassName: alb
+
+hosts:
+  - paths:
+    - path: /*
+      pathType: ImplementationSpecific
+      backend:
+        service:
+          name: ssl-redirect
+          port:
+            name: use-annotation
+    - path: /*
+      pathType: ImplementationSpecific
+      backend:
+        service:
+          name: ingress-nginx-controller # Make sure you name the service correctly by checking the name of it nginx ingress controller service nothing else
+          port:
+            number: 80
