@@ -1,0 +1,16 @@
+apiVersion: v2
+appVersion: "v1.0.0"
+home: https://skyloud.github.io/helm-charts
+description: Helm Chart representing a single IngressClass Kubernetes API object
+name: ingressclass
+version: 1.0.0
+icon: https://ameijer.github.io/k8s-as-helm/icon.png
+maintainers:
+  - name: skyloud
+    url: https://github.com/skyloud
+  - name: a26p
+    url: https://github.com/al26p
+keywords:
+- ingressClass
+- api
+- primitives
