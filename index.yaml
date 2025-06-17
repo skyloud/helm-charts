@@ -53,6 +53,26 @@ entries:
     urls:
     - https://github.com/skyloud/helm-charts/releases/download/aws-target-group-binding-1.0.0/aws-target-group-binding-1.0.0.tgz
     version: 1.0.0
+  cert-issuer:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-06-17T12:41:25.67800242Z"
+    description: A Helm chart for Deploying and Configuring Cert Manager cluster issuer
+    digest: 765b13ca8ef9259fb0ed50134d3ba2edb328c05f3eeb77b1c9565e7ffc600e2a
+    keywords:
+    - cert-manager
+    - cluster-issuer
+    - letsencrypt
+    maintainers:
+    - name: skyloud
+      url: https://github.com/skyloud
+    - name: a26p
+      url: https://github.com/al26p
+    name: cert-issuer
+    type: application
+    urls:
+    - https://github.com/skyloud/helm-charts/releases/download/cert-issuer-0.1.0/cert-issuer-0.1.0.tgz
+    version: 0.1.0
   common:
   - apiVersion: v2
     appVersion: v0.1.0
@@ -250,4 +270,4 @@ entries:
     urls:
     - https://github.com/skyloud/helm-charts/releases/download/tailscale-operator-1.70.1/tailscale-operator-1.70.1.tgz
     version: 1.70.1
-generated: "2025-06-03T16:10:47.519171337Z"
+generated: "2025-06-17T12:41:25.678033598Z"
